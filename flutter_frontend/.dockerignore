@@ -1,0 +1,26 @@
+# Don't send the Dart and Flutter tool cache
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.buildlog
+.dart_tool/
+build/
+ios/
+android/
+linux/
+macos/
+windows/
+web/  # optional: exclude if you only want to build from Docker
+
+# IDE configs
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
