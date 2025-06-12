@@ -45,6 +45,8 @@ RUN python manage.py collectstatic --noinput || true
 # Expose port
 EXPOSE 8000
 
+RUN chmod +x /wait-for-postgres.sh
+
 ENTRYPOINT ["/wait-for-postgres.sh"]
 # Start the app with Gunicorn
 CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]

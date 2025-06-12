@@ -11,7 +11,6 @@ This is a full-stack application using:
 
 ## 🚀 Getting Started
 
-### 1.unzip the project
 
 ```bash
 # for start
@@ -19,3 +18,8 @@ docker-compose up --build
 
 # for stop
 docker-compose down -v
+
+developemnt frontend run
+
+cd/ flutter_frontend
+flutter run -d chrome
